@@ -1,0 +1,156 @@
+/* body全体に適用 */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* container全体に適用 */
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* form全体に適用 */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* input全体に適用 */
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+/* button全体に適用 */
+button {
+  padding: 10px;
+  background-color: #f2994a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f5872b;
+}
+
+.weather-info {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* result要素全体に適用 */
+.result p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* weather-icon要素に適用 */
+.result p .weather-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+/* weather-description要素に適用 */
+.result p .weather-description {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* temperature要素に適用 */
+.result p .temperature {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+/* temperature-unit要素に適用 */
+.result p .temperature-unit {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+/* additional-info要素に適用 */
+.result p .additional-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* info-item要素に適用 */
+.result p .info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* info-itemの中の要素に適用 */
+.result p .info-item span {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.result p .info-item img {
+  width: 30px;
+  height: 30px;
+}
+
+h1 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* セレクトボックスのスタイル */
+select {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+  select {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 0;
+    width: auto;
+  }
+}
